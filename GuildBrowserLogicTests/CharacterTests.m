@@ -78,6 +78,8 @@
 // 2
 -(void)testCreateCharacterFromDetailJsonValidateItems
 {
+    
+    self._testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
     XCTAssertEqualObjects(self._testGuy.neckItem.name,@"Stoneheart Choker", @"name is wrong");
     XCTAssertEqualObjects(self._testGuy.wristItem.name,@"Vicious Pyrium Bracers", @"name is wrong");
     XCTAssertEqualObjects(self._testGuy.waistItem.name,@"Girdle of the Queen's Champion", @"name is wrong");
