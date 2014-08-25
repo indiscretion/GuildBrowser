@@ -59,6 +59,7 @@
 
 -(void)testCreateCharacterFromDetailJsonProps
 {
+    // these are tests
     self._testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
     
     XCTAssertEqualObjects(self._testGuy.thumbnail, @"borean-tundra/171/40508075-avatar.jpg", @"thumbnail url is wrong");
